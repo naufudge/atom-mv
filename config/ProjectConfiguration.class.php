@@ -26,6 +26,8 @@ require_once __DIR__.'/../lib/QubitApcUniversalClassLoader.php';
 
 require_once __DIR__.'/../vendor/composer/autoload.php';
 
+require_once __DIR__.'/../vendor/doctrine/lib/Doctrine.php';
+
 use Symfony\Component\ClassLoader\UniversalClassLoader;
 
 class ProjectConfiguration extends sfProjectConfiguration
@@ -46,6 +48,7 @@ class ProjectConfiguration extends sfProjectConfiguration
             'sfWebBrowserPlugin',
             // sfPluginAdminPlugin depends on sfPropelPlugin
             'sfPluginAdminPlugin',
+            'sfDoctrinePlugin',
         ];
 
         // Check if the OIDC plugin should be enabled.
